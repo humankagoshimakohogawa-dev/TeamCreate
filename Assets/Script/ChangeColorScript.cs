@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 
 public class ChangeColorScript : MonoBehaviour
-{
+{   
     public Material MyColor;
     
     void OnMouseEnter()
