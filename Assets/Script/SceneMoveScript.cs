@@ -1,16 +1,52 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneMoveScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //=======================================================================================================================
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    //=======================================================================================================================
     void Update()
     {
         
     }
+
+    //=======================================================================================================================
+    // タイトルシーンへ
+    public void LoadTitleScene()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
+
+    //=======================================================================================================================
+    // ルールシーンへ
+    public void LoadRuleScene()
+    {
+        SceneManager.LoadScene("RuleScene");
+    }
+
+    //=======================================================================================================================
+    // 先攻決めシーンへ
+    public void LoadDecidingFirstScene()
+    {
+        SceneManager.LoadScene("DecidingFirstScene");
+    }
+
+    //=======================================================================================================================
+    // ゲームシーンへ
+    public void LoadGameScene()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+
+    //=======================================================================================================================
+    // リザルトシーンへ
+    //public void LoadResultScene()
+    //{
+    //    SceneManager.LoadScene("ResultScene");
+    //}
 }
